@@ -4,11 +4,17 @@
     background-color: black;
     color: white;
     text-decoration: none;
+    list-style-type: none;
+}
 
+@font-face {
+    font-family: Medieval;
+    src: url(MedievalSharp/MedievalSharp-Regular.ttf);
 }
 
 body {
     height: 100vh;
+    font-family: Medieval;
 }
 
 :root {
@@ -51,15 +57,12 @@ body {
 .series-list li {
     display: inline;
     padding: 5px;
-
 }
 
 li a:hover {
     cursor: pointer;
     color: var(--blue);
     transition: 1.5s;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
 }
 
 .navbar-search {
@@ -76,7 +79,7 @@ li a:hover {
     width: 100px;
     height: 50px;
     border-color: blue;
-
+    font-family: Medieval;
 }
 
 .main {
@@ -154,11 +157,13 @@ li a:hover {
     width: 100px;
     height: 50px;
     border-color: violet;
+    font-family: Medieval;
 }
 
 .peliculas,
 .series {
     margin: 3%;
+    height: 100vh;
 }
 
 .peliculas-menu,
@@ -170,15 +175,16 @@ li a:hover {
     justify-content: left;
     align-items: center;
     gap: 15%;
+    height: 8vh;
    
 }
 
-.peliculas-list li,
+.peliculas-list li a,
 .peliculas-list{
     color: var(--blue);
 }
 
-.series-list li,
+.series-list li a,
 .series-list h2{
     color: violet;
 }
@@ -191,6 +197,7 @@ li a:hover {
 
 }
 
+.series-cards h6,
 h6 {
     display: flex;
     justify-content: center;
@@ -198,7 +205,11 @@ h6 {
     background-color: var(--blue);
     color: white;
     align-self: center;
+}
 
+.series-cards h6{
+    background-color: violet;
+    color: black;
 }
 
 .card {
@@ -230,7 +241,6 @@ h6 {
     text-align: justify;
     align-items: center;
     transform: scale(0);
-
     color: black;
 }
 
@@ -373,4 +383,61 @@ h6 {
 
 #bad {
     background-image: url(bad.jpg);
+}
+
+.line {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.line-violet,
+.line-blue{
+    height: 2px;
+    width: 40vw;
+    
+}
+
+.line-violet{
+    background-color: violet;
+}
+
+.line-blue{
+    background-color: blue;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    color: #ffffff;
+    font-size: 1vw;
+    
+}
+
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.redes i:hover {
+    cursor: pointer;
+    color: violet;
+    transition: 1.5s;
+    
+}
+
+.footer-list{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 80vw;
+
 }

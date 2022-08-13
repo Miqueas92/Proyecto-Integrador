@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>PirateMovies</title>
     <link rel="icon" type="image/png" href="pop.jpg">
 </head>
@@ -20,7 +23,7 @@
                 <li class="navbar-list-li"><a>Series</a></li>
                 <li class="navbar-list-li"><a>TV en Vivo</a></li>
                 <li class="navbar-list-li"><input type="search" placeholder="Buscar" class="navbar-search"></li>
-                <li class="navbar-list-li"><button class="navbar-login"><a class="navbar-login" href="">Entrar</a></button></li>
+                <li class="navbar-list-li"><button class="navbar-login"><a class="navbar-login" href="login.html">Entrar</a></button></li>
                 <li class="navbar-list-li"><button class="navbar-signup"><a class="navbar-signup" href="">Registrate</a></button></li>
             </ul>
         </nav>
@@ -60,10 +63,10 @@
             <div class="peliculas-menu">
                 <h2>Películas</h2>
                 <ul class="peliculas-list">
-                    <li>Estrenos</li>
-                    <li>Destacadas</li>
-                    <li>Clásicos</li>
-                    <li>Más Vistas</li>
+                    <li><a>Estrenos</a></li>
+                    <li><a>Destacadas</a></li>
+                    <li><a>Clásicos</a></li>
+                    <li><a>Más Vistas</a></li>
                 </ul>
             </div>
             <div class="peliculas-cards">
@@ -108,14 +111,18 @@
             <div class="series-menu">
                 <h2>Series</h2>
                 <ul class="series-list">
-                    <li>Estrenos</li>
-                    <li>Destacadas</li>
-                    <li>Clásicos</li>
-                    <li>Más Vistas</li>
+                    <li><a>Estrenos</a></li>
+                    <li><a>Destacadas</a></li>
+                    <li><a>Clásicos</a></li>
+                    <li><a>Más Vistas</a></li>
                 </ul>
             </div>
 
             <div class="series-cards">
+                <div class="card" id="rings">
+                    <h6>ESTRENO</h6>
+                </div>
+                <div class="description"></div>
                 <div class="card" id="boys"></div>
                 <div class="description"></div>
                 <div class="card" id="house"></div>
@@ -128,14 +135,27 @@
                 <div class="description"></div>
                 <div class="card" id="ex"></div>
                 <div class="description"></div>
-                <div class="card" id="rings"></div>
-                <div class="description"></div>
                 <div class="card" id="bad"></div>
                 <div class="description"></div>
             </div>
 
         </section>
     </main>
+
+    <div class="line"><div class="line-violet"></div><div class="line-blue"></div></div>
+
+    <footer class="footer">
+        <ul class="footer-contact">
+            <li><a class="redes" href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a class="redes" href=""><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a class="redes" href=""><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+        <ul class="footer-list">
+            <li><a>Avenida Siempre Viva 742, Springfield</a></li>
+            <li><a>Terminos y Condiciones</a></li>
+            <li><a>Todos los Derechos Reservados</a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>
