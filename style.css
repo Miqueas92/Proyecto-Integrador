@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+
+}
+
+body {
+    height: 100vh;
+}
+
+:root {
+    --blue: #0c4da2
+}
+
+.header {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 1%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    height: 50px;
+    margin: 2px;
+}
+
+.navbar-list {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+}
+
+.navbar-list-li,
+.peliculas-list li,
+.series-list li {
+    display: inline;
+    padding: 5px;
+
+}
+
+li a:hover {
+    cursor: pointer;
+    color: var(--blue);
+    transition: 1.5s;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.navbar-search {
+    border-radius: 50px;
+    width: 210px;
+    height: 30px;
+    border-color: violet;
+    text-align: center;
+}
+
+.navbar-login,
+.navbar-signup {
+    border-radius: 50px;
+    width: 100px;
+    height: 50px;
+    border-color: blue;
+
+}
+
+.main {
+    height: 100vh;
+}
+
+.hero {
+    display: flex;
+    margin: 1%;
+    font-size: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.hero-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    min-height: 85vh;
+}
+
+.slider {
+    width: 50vh;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0px 0px 7px 0px violet ;
+    background-color: violet; 
+    
+}
+
+.slider ul{
+    display: flex;
+    animation: slide 20s infinite alternate linear;
+    width: 400%;
+    background-color: violet; 
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+    background-color: violet;    
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+       
+}
+
+@keyframes slide{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hero-button {
+    border-radius: 50px;
+    width: 100px;
+    height: 50px;
+    border-color: violet;
+}
+
+.peliculas,
+.series {
+    margin: 3%;
+}
+
+.peliculas-menu,
+.series-menu {
+    display: flex;
+    font-size: 30px;
+    font-style: bold;
+    margin: 2% 5%;
+    justify-content: left;
+    align-items: center;
+    gap: 15%;
+   
+}
+
+.peliculas-list li,
+.peliculas-list{
+    color: var(--blue);
+}
+
+.series-list li,
+.series-list h2{
+    color: violet;
+}
+
+.peliculas-cards,
+.series-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+h6 {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: var(--blue);
+    color: white;
+    align-self: center;
+
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 185px;
+    height: 270px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2px;
+    background-image: url(play.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    transform: scale(0);
+
+    color: black;
+}
+
+.card:hover::before {
+    transform: scale(1);
+    transition-delay: 0.6s;
+}
+
+.card:hover {
+    transform: scale(-1, 1) rotate3d(0, 1, 0, 180deg);
+    transition: transform 2s;
+}
+
+#batman {
+    background-image: url(batman.jpg);
+}
+
+#batman::before {
+    content: "En su segundo año luchando contra el crimen, Batman explora la corrupción existente en la ciudad de Gotham y el vínculo de esta con su propia familia. Además, entrará en conflicto con un asesino en serie conocido como ´´el Acertijo´´.";
+    color: white;
+}
+
+#Lightyear {
+    background-image: url(Lightyear.jpg);
+}
+
+#Lightyear::before {
+    content: "Buzz Lightyear se embarca en una aventura intergaláctica con un grupo de reclutas ambiciosos y su compañero robot.";
+    color: white;
+}
+
+#thor {
+    background-image: url(thor.jpg);
+}
+
+#thor::before {
+    content: "Secuela de ´´Thor: Ragnarok´´ en la que el Dios del Trueno contará con Lady Thor como acompañante.";
+    color: white;
+}
+
+#top {
+    background-image: url(top.jpg);
+}
+
+#top::before {
+    content: "Tras más de 30 años de servicio como uno de los mejores aviadores de la Armada, Pete ´´Maverick´´ Mitchel se encuentra dónde siempre quiso estar, empujando los límites como un valiente piloto de prueba.";
+    color: white;
+}
+
+#jurassic {
+    background-image: url(jurassic.jpg);
+}
+
+#jurassic::before {
+    content: "La isla Nublar y su parque han sido destruidos, pero el problema no se terminó. Con los dinosaurios dispersos por todo el mundo, la convivencia entre el presente y el pasado alcanza un nuevo nivel de tensión.";
+    color: white;
+}
+
+#back {
+    background-image: url(back.jpg);
+}
+
+#back::before {
+    content: "Relata las aventuras de Marty McFly, un adolescente rebelde e impulsivo que vive con sus padres y viaja accidentalmente al pasado desde 1985, su época, a 1955, la época en que sus padres se conocieron.";
+    color: white;
+}
+
+#star {
+    background-image: url(star.jpg);
+}
+
+#star::before {
+    content: "Una nueva aventura está a punto de comenzar, antiguos y nuevos personajes además de viejas caras conocidas, se preparan para lo que está por llegar, pues arcaicos secretos de la Fuerza e impactantes revelaciones del pasado serán revelados.";
+    color: white;
+}
+
+#irene {
+    background-image: url(irene.jpg);
+}
+
+#irene::before {
+    content: "Charlie es un policía experimentado con doble personalidad: una gentil y otra indeseable que emerge cuando no toma su medicación. Sus dos yos se enamoran de la misma mujer, a quien debe escoltar desde Rhode Island hasta Nueva York.";
+    color: white;
+}
+
+#matrix {
+    background-image: url(matrix.jpeg);
+}
+
+#matrix::before {
+    content: "Thomas Anderson lleva una vida cómoda como una eminencia dentro del mundo de los videojuegos, pero tiene problemas para discernir entre lo que es realidad y lo que no lo es. Thomas deberá decidir si sigue al conejo blanco una vez más.";
+    color: white;
+}
+
+#hannibal {
+    background-image: url(hannibal.jpg);
+}
+
+#hannibal::before {
+    content: "La historia de Lecter comienza en Europa del Este, a finales de la Segunda Guerra Mundial. Hannibal, aún un niño, es testigo del asesinato de sus padres. Completamente solo y sin ningún tipo de apoyo, Hannibal tiene que sobrevivir en un orfanato soviético.";
+    color: white;
+}
+
+#avengers {
+    background-image: url(avengers.jpg);
+}
+
+#avengers::before {
+    content: "Cuando un enemigo inesperado amenaza con poner en peligro la seguridad mundial, Nicholas Fury, Director de la agencia internacional para el mantenimiento de la paz, conocida con el nombre de S.H.I.E.L.D., necesita encontrar urgentemente un equipo que salve al mundo del mayor de los desastres.";
+    color: white;
+}
+
+#boys {
+    background-image: url(boys.jpg);
+}
+
+#house {
+    background-image: url(house.jpg);
+}
+
+#friends {
+    background-image: url(friends.jpg);
+}
+
+#alf {
+    background-image: url(alf.jpg);
+}
+
+#big {
+    background-image: url(big.jpg);
+}
+
+#ex {
+    background-image: url(ex.jpg);
+}
+
+#rings {
+    background-image: url(rings.jpg);
+}
+
+#bad {
+    background-image: url(bad.jpg);
+}
