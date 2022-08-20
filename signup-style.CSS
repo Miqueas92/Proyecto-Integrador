@@ -22,11 +22,6 @@ body{
     font-family: Medieval;
 }
 
-body h6{
-    font-size: 28px;
-    color: white;
-}
-
 img{
     border-radius: 50%;
     margin: 15px;
@@ -70,28 +65,25 @@ img{
     font-weight: bold;
     font-size: 20px;
     color: white;
-    background-color:rgb(153, 46, 153);
-    border-color: violet;
+    background-color:rgb(126, 0, 126);
     border-radius: 25px;
     
 }
 
 .restart {
-    display: block;
+    display: flex;
     justify-content:center;
+    align-items: center;
     background-color: black;
     font-family: Medieval;
+    font-weight: normal;
+    font-size: 1.5vh;
     width: 20vh;
     height: 5vh;
     border-radius: 20px;
+    border-style: solid;
     border-color: rgb(206, 205, 205);
-    color: rgb(83, 83, 83);
-}
-
-.restart-h6{
-    display: inline;
-    font-size: 1.5vh;
-    font-weight: normal;
+    color: white;
 }
 
 a:hover{
