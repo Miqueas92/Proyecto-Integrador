@@ -49,11 +49,9 @@ body {
 .bar,
 .menu-movie,
 .menu-series,
+.menu-toggle,
+.contact,
 .series-cards input {
-    display: none;
-}
-
-.menu-toggle {
     display: none;
 }
 
@@ -82,6 +80,10 @@ li a:hover {
     border-color: blueviolet;
     text-align: center;
     background-color: black;
+}
+
+::placeholder {
+    font-family: "Font Awesome 5 Free";
 }
 
 .navbar-login,
@@ -145,7 +147,6 @@ li a:hover {
 .slider img {
     width: 100%;
     height: 100%;
-
 }
 
 @keyframes slide {
@@ -315,63 +316,6 @@ li a:hover {
     transition: transform 2s;
 }
 
-.description,
-.description-r,
-.description-b,
-.description-h,
-.description-f,
-.description-a,
-.description-g,
-.description-e,
-.description-bb {
-    display: none;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    overflow: hidden;
-    cursor: pointer;
-    background: linear-gradient(to bottom right, blueviolet, var(--blue));
-    opacity: 70%;
-    width: 300px;
-    height: 200px;
-    border-radius: 10px;
-    margin: 5px;
-    margin-left: -25px;
-    z-index: 3;
-}
-
-.series-cards h6{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    box-sizing: border-box;
-    font-size: 20px;
-    color: white;
-    
-}
-
-.series-cards label h6{
-    font-size: 10px;
-}
-
-.series-cards p{
-    font-size: 15px;
-    color: white;
-    margin: 5px 10px;
-}
-
-#rings-s:checked~.description-r,
-#boys-s:checked~.description-b,
-#house-s:checked~.description-h,
-#friends-s:checked~.description-f,
-#alf-s:checked~.description-a,
-#big-s:checked~.description-g,
-#ex-s:checked~.description-e,
-#bad-s:checked~.description-bb  {
-    display: flex;
-    transition: all 0.5s ease-in;
-}
-
 #batman {
     background-image: url(batman.jpg);
 }
@@ -471,6 +415,14 @@ li a:hover {
     color: white;
 }
 
+#rings {
+    background-image: url(rings.jpg);
+}
+
+#dragon {
+    background-image: url(dragon.jpg);
+}
+
 #boys {
     background-image: url(boys.jpg);
 }
@@ -495,12 +447,126 @@ li a:hover {
     background-image: url(ex.jpg);
 }
 
-#rings {
-    background-image: url(rings.jpg);
-}
-
 #bad {
     background-image: url(bad.jpg);
+}
+
+.description-d,
+.description-r,
+.description-b,
+.description-h,
+.description-f,
+.description-a,
+.description-g,
+.description-e,
+.description-bb {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    background: linear-gradient(to bottom right, blueviolet, var(--blue));
+    opacity: 70%;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 5px;
+    margin-left: -25px;
+    z-index: 3;
+}
+
+.series-cards h6 {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: white;
+
+}
+
+.series-cards label h6 {
+    font-size: 10px;
+}
+
+.series-cards p {
+    font-size: 15px;
+    color: white;
+    margin: 5px 10px;
+}
+
+#rings-s:checked~.description-r,
+#dragon-s:checked~.description-d,
+#boys-s:checked~.description-b,
+#house-s:checked~.description-h,
+#friends-s:checked~.description-f,
+#alf-s:checked~.description-a,
+#big-s:checked~.description-g,
+#ex-s:checked~.description-e,
+#bad-s:checked~.description-bb {
+    display: flex;
+    transition: all 0.5s ease-in;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 85vh;
+}
+
+.contact-img {
+    height: 60vh;
+    width: 48vh;
+    background-image: url(mensaje.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact h6 {
+    display: block;
+    font-size: 3vw;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact input {
+    display: block;
+    margin: 5px;
+    width: 40vw;
+    background-color: black;
+}
+
+.user {
+    height: 10vh;
+}
+
+.text {
+    height: 40vh;
+    line-height: 40vh;
+}
+
+.text::placeholder {
+    line-height: 40vh;
+}
+
+.contact-form button {
+    height: 8vh;
+    width: 12vh;
+    border-radius: 25px;
+    background-color: black;
+    border-color: blue;
+    border-style: solid;
 }
 
 .line {
@@ -560,7 +626,7 @@ li a:hover {
 
 }
 
-@media (max-width: 1034.98px) {
+@media (max-width: 1047.98px) {
 
 
     .navbar-list {
@@ -650,19 +716,25 @@ li a:hover {
         align-self: center;
         color: white;
     }
+}
 
-    @media (max-width: 450.98px) {
-        .hero{
-            font-size: 3vw;
-        }
-
-        .footer-list {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            
-        }
+@media (max-width: 790.98px) {
+    .contact-img {
+        display: none;
     }
 
+}
+
+@media (max-width: 450.98px) {
+    .hero {
+        font-size: 3vw;
+    }
+
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
 }

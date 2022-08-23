@@ -22,8 +22,8 @@
             <ul class="navbar-list">
                 <div class="navbar-list-menu">
                     <li class="navbar-list-li"><a>Inicio</a></li>
-                    <li class="navbar-list-li"><a>Películas</a></li>
-                    <li class="navbar-list-li"><a>Series</a></li>
+                    <li class="navbar-list-li"><a href="#peliculas">Películas</a></li>
+                    <li class="navbar-list-li"><a href="#series">Series</a></li>
                     <li class="navbar-list-li"><a>TV en Vivo</a></li>
                 </div>
                 <div class="navbar-list-button">
@@ -68,7 +68,7 @@
 
         </section>
 
-        <section class="peliculas">
+        <section class="peliculas" id="peliculas">
 
             <div class="peliculas-menu">
                 <label for="menu-movie" class="menu">Películas</label>
@@ -119,7 +119,7 @@
 
         </section>
 
-        <section class="series">
+        <section class="series" id="series">
 
             <div class="series-menu">
                 <label for="menu-series" class="menu">Series</label>
@@ -147,6 +147,20 @@
                     <p>2022 - DRAMA - 1 TEMPORADA</p>
                     <p>Los héroes se enfrentan al temido resurgimiento del mal en la Tierra Media.</p>
                     <p>Primer episodio: 2 de septiembre de 2022</p>
+                </div>
+
+                <label for="dragon-s" class="bar-s">
+                    <div class="card-s" id="dragon">
+                        <h6>ESTRENO</h6>
+                    </div>
+                </label>
+                <input type="checkbox" id="dragon-s" class="dragon-s">
+                <div class="description-d">
+                    <h6>House of the Dragon</h6>
+                    <p>2022 - DRAMA - 1 TEMPORADA</p>
+                    <p>La historia de la familia Targaryen, 200 años antes de los eventos que tuvieron lugar en "Game of
+                        Thrones".</p>
+                    <p>Primer episodio: 21 de agosto de 2022</p>
                 </div>
 
                 <label for="boys-s" class="bar-s">
@@ -235,6 +249,20 @@
                         metanfetamina a fin de que su familia no pase apuros económicos.</p>
                     <p>Duración: 47 minutos</p>
                 </div>
+            </div>
+
+        </section>
+        <section class="contact">
+
+            <div class="contact-img"></div>
+            <div>
+                <h6>Contactanos!</h6>
+                <form class="contact-form">
+                    <input type="text" class="user" placeholder="  Usuario">
+                    <input type="email" class="user" placeholder="  Email">
+                    <input type="text" class="text" placeholder=" Mensaje">
+                    <button type="submit" >Enviar</button>
+                </form>
             </div>
 
         </section>
