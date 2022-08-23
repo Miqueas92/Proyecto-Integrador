@@ -212,24 +212,23 @@ li a:hover {
     display: flex;
     font-size: 1.5vw;
     font-style: bold;
-    margin: 2% 5%;
-    justify-content: left;
+    margin: 2%;
+    justify-content: space-around;
     align-items: center;
-    gap: 15%;
-    height: 8vh;
+    height: 10vh;
     width: 80vw;
     overflow-y: hidden;
-
 }
 
 .menu {
-    font-size: 3vw;
-    width: 13vw;
+    font-size: 4vw;
+    width: 20vw;
 }
 
 .peliculas-list-ul,
 .series-list-ul {
     width: 70%;
+    font-size: 2.5vw;
 }
 
 .peliculas-list,
@@ -516,6 +515,7 @@ li a:hover {
     justify-content: space-evenly;
     width: 100vw;
     height: 85vh;
+    overflow-y: hidden;
 }
 
 .contact-img {
@@ -529,7 +529,7 @@ li a:hover {
 
 .contact h6 {
     display: block;
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
 .contact-form {
@@ -538,13 +538,16 @@ li a:hover {
     height: 75vh;
     align-items: center;
     justify-content: space-evenly;
+    
 }
 
 .contact input {
     display: block;
     margin: 5px;
+    padding-left: 10px;
     width: 40vw;
     background-color: black;
+    border-radius: 25px;
 }
 
 .user {
@@ -552,12 +555,18 @@ li a:hover {
 }
 
 .text {
-    height: 40vh;
-    line-height: 40vh;
+    height: 35vh;
+    width: 40vw;
+    background-color: black;
+    padding: 10px;
+    text-align: left;
+    vertical-align: text-top;
+    border-radius: 25px;
+    overflow-y: hidden;
 }
 
 .text::placeholder {
-    line-height: 40vh;
+    vertical-align: text-top;
 }
 
 .contact-form button {
@@ -567,6 +576,7 @@ li a:hover {
     background-color: black;
     border-color: blue;
     border-style: solid;
+    cursor: pointer;
 }
 
 .line {
@@ -721,6 +731,11 @@ li a:hover {
 @media (max-width: 790.98px) {
     .contact-img {
         display: none;
+    }
+
+    .contact input,
+    .text {
+        width: 90vw;
     }
 
 }
