@@ -738,11 +738,20 @@ li a:hover {
         width: 90vw;
     }
 
+    .footer li{
+        font-size: 2vh;
+    }
+
 }
 
-@media (max-width: 450.98px) {
+@media (max-width: 690.98px) {
+    
     .hero {
-        font-size: 3vw;
+        font-size: 4vh;
+    }
+
+    .footer li{
+        font-size: 2vh;
     }
 
     .footer-list {
